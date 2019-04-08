@@ -1,0 +1,166 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* My Custom Styles */
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+}
+
+#topSection {
+  color: white;
+  background-image: url('../images/girl-laptop.jpg')/*Photo by Nicole Honeywill on Unsplash*/;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+  padding-bottom: 150px;
+
+}
+
+#topSection h1 {
+  font-size: 36px;
+  padding-top: 200px;
+  margin-bottom: 15px;
+} 
+#topSection p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#topSection small {
+  font-size: 14px;
+  display: block;
+  margin-top: 40px;
+}
+
+
+#topSection a {
+  color: white;
+  text-decoration: none;
+}
+
+#topSection ul {
+  float: right;
+}
+#topSection ul li {
+  float: left;
+}
+
+#mainLogo {
+  font-size: 30px;
+  float: left;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+
+a.redButton {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.brandFont {
+  font-family: 'Pacifico', cursive;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 30px;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 30px;
+}
+
+/* Team Section */
+
+h2 {
+  font-size: 42px;
+  font-family: impact;
+  margin: 30px 0;
+}
+
+#team {
+  padding-bottom: 200px;
+}
+
+#team .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#team figure img {
+  border-radius: 50%;
+}
+
+
+
+#team figure h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#team figure h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+
+
+.inside {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255,255,255,.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .group:before,
+ .group:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .group:after {
+     clear: both;
+ }
